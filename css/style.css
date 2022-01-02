@@ -27,6 +27,7 @@ html{
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 300px;
+  justify-items: center;
 }
 .logo {
   display: none;
@@ -79,4 +80,27 @@ html{
 .login-button{
   margin-top: 14px;
   margin-bottom: 30px;
+}
+.email-image{
+  display: flex;
+  width: 132px;
+  height: 132px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-input-field);
+}
+.email-image img{
+  width: 80px;
+}
+.resend{
+  font-size: var(--sm);
+}
+.resend span{
+  color: var(--very-light-pink);
+}
+.resend a{
+  color: var(--hospital-green);
+  text-decoration: none;
 }
