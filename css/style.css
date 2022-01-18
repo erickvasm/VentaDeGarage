@@ -27,7 +27,6 @@ html{
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 300px;
-  justify-items: center;
 }
 .logo {
   display: none;
@@ -38,6 +37,11 @@ html{
 .title {
   margin-bottom: 12px;
   text-align: center;
+  font-size: var(--lg);
+}
+.title-accound {
+  margin-bottom: 20px;
+  text-align: start;
   font-size: var(--lg);
 }
 .subtitle {
@@ -52,10 +56,21 @@ html{
   display: flex;
   flex-direction: column;
 }
+.form a{
+  margin-bottom: 54px;
+  font-size: var(--sm);
+  text-align: center;
+  text-decoration: none;
+  color: var(--hospital-green);
+}
 .label{
   margin-bottom: 4px;
   font-size: var(--sm);
   font-weight: bold;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
 }
 .input{
   height: 30px;
@@ -66,9 +81,18 @@ html{
   border: none;
   border-radius: 8px;
 }
+.input-email{
+  margin-bottom: 22px;
+}
+.input-email,
+.input-name,
+.input-password{
+  margin-bottom: 22px;
+}
 .primary-button{
   width: 100%;
   height: 50px;
+  margin-bottom: 20px;
   font-size: var(--md);
   font-weight: bold;
   background-color: var(--hospital-green);
@@ -77,9 +101,24 @@ html{
   color: var(--white);
   cursor: pointer;
 }
+.secundary-button{
+  width: 100%;
+  height: 50px;
+  font-size: var(--md);
+  font-weight: bold;
+  background-color: var(--white);
+  border-radius: 8px;
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+  cursor: pointer;
+}
 .login-button{
   margin-top: 14px;
   margin-bottom: 30px;
+}
+.section-email{
+  display: flex;
+  justify-content: center;
 }
 .email-image{
   display: flex;
@@ -93,6 +132,10 @@ html{
 }
 .email-image img{
   width: 80px;
+}
+.resend-section{
+  display: flex;
+  justify-content: center;
 }
 .resend{
   font-size: var(--sm);
