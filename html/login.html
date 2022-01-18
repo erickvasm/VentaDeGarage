@@ -15,24 +15,18 @@
     <div class="form-container">
       <img src="../assets/logos/logo_yard_sale.svg" alt="logo" class="logo">
 
-      <h1 class="title">Email has been send!</h1>
-      <p class="subtitle">Please check your inbox for instructions on how to reset the password</p>
-       
-      <div class="section-email">
-        <div class="email-image">
-          <img src="../assets/iconos/email.svg" alt="email">
-        </div>
-      </div> 
+      <form action="/" class="form">
+        <label for="email" class="label">Email password</label>
+        <input type="email" placeholder="email@example.com" id="email" class="input input-email">
 
-      <button type="submit" class="primary-button login-button">Login</button>
+        <label for="password" class="label">Password</label>
+        <input type="password" id="new-password" placeholder="*********" class="input input-password">
 
-      <div class="resend-section">
-        <p class="resend">
-          <span>Didn't receive the email?</span>
-          <a href="/">Resend</a>
-        </p>
-      </div>
+        <input type="submit" value="Confirm" class="primary-button login-button">
+        <a href="/">Forget my password</a>
 
+        <button class="secundary-button singup-button" type="submit">Sing up</button>
+      </form>
     </div>
   </main>
 </body>
